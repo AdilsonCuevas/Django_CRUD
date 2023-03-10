@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+    <h5>creacion de tareas</h5>
+
+
+    <form  method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Save</button>
+    </form>
+
+{% endblock %}

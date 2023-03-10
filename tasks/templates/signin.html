@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+    <h5>Inicio de seccion</h5>
+
+    {{ error }}
+
+    <form  method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Signin</button>
+    </form>
+
+{% endblock %}
